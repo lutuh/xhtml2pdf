@@ -717,7 +717,7 @@ def pisaParser(src, context, default_css="", xhtml=False, encoding=None, xml_out
     else:
         parser = html5lib.HTMLParser(tree=treebuilders.getTreeBuilder("dom"))
 
-    if isinstance(src, six.text_type):
+    if False and isinstance(src, six.text_type):
         # If an encoding was provided, do not change it.
         if not encoding:
             encoding = "utf-8"
